@@ -36,7 +36,6 @@ main {
 }
 .logo {
   font-size: 18px;
-  line-height: 0;
   color: #5f6175;
   cursor: pointer;
 }
@@ -107,19 +106,31 @@ main {
 .menu_container .link {
   padding-left: 25px;
 }
-
+.icon {
+  font-size: 18px;
+}
 .center-content {
   width: 100%;
   border-top-left-radius: 28px;
   background-color: #f1f3f7;
-}
-.icon {
-  font-size: 18px;
 }
 .header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0rem 1rem;
+}
+.logo-title {
+  font-size: 18px;
+  color: #5f6175;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-title {
+    display: none;
+  }
+  .header {
+    padding: 0rem 0.2rem;
+  }
 }

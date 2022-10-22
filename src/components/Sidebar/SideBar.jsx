@@ -236,8 +236,8 @@ const SideBar = ({ children }) => {
 
         <main className="center-content">
           <div className="header">
-            <ul>
-              <li className="logo">Dashboard</li>
+            <ul className="logo-title">
+              <li>Dashboard</li>
             </ul>
             <NavBar>
               <NavItem icon={<AiOutlineSearch />} />

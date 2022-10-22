@@ -50,7 +50,7 @@
   font-weight: bold;
 }
 .detail > span:nth-child(2) {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -102,6 +102,9 @@
     top: 8rem;
     height: 50%;
     left: 25px;
-    width: 80%;
+    width: 60%;
+  }
+  .CircularProgressbar {
+    width: 2.5rem !important;
   }
 }

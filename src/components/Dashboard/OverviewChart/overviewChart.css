@@ -51,7 +51,7 @@
 
 /* left side style  */
 .overview-left {
-  width: 30%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -86,8 +86,8 @@
   width: 100%;
 }
 .overview-left .bottom table td {
-  min-width: 100px;
-  min-height: 90px;
+  /* min-width: 100px;
+  min-height: 90px; */
   padding: 5px;
   overflow: hidden;
 }
@@ -114,5 +114,16 @@ td:nth-child(odd) {
 }
 /* Right side chart style  */
 .overview-right {
-  width: 70%;
+  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .overview-main {
+    flex-direction: column;
+  }
+  .dropdown-overview {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
 }

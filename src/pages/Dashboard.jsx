@@ -10,7 +10,7 @@ const Dashboard = () => {
       <div className="left-content">
         <Widgets />
         <OverviewChart />
-        <Charts />
+        {/* <Charts /> */}
       </div>
       <div className="right-content">{<Profile />}</div>
     </div>
