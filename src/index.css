@@ -1,7 +1,16 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
   background-color: #010422;
+}
+:root {
+  --primary-color: #447ce2;
+  --secondary-color: #010422;
+  --success-color: #74b67e;
+  --warning-color: #f36e6e;
 }
 
 ul {

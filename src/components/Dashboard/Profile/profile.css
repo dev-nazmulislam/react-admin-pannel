@@ -54,9 +54,11 @@
   text-align: center;
   font-size: 20px;
   font-weight: bold;
+  color: rgb(48, 47, 47);
 }
 .profile-info > p {
-  font-size: 16px;
+  font-size: 18px;
+  color: #7d8189;
   text-align: center;
 }
 
@@ -66,9 +68,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: gray;
   text-align: center;
   margin: 1rem 0rem;
+  color: #7d8189;
 }
 .profile-status > hr {
   height: 25px;
@@ -76,21 +78,8 @@
   background-color: grey;
 }
 .status-counter {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
-}
-
-@media screen and (max-width: 1200px) {
-  .Cards {
-    flex-direction: column;
-  }
-  .parentContainer {
-    height: 9rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .Cards {
-    width: 90%;
-  }
+  color: rgb(48, 47, 47);
+  padding-bottom: 5px;
 }

@@ -6,6 +6,7 @@
 
 /* Activity Chart  */
 .chart {
+  width: 100%;
   background-color: white;
   border-radius: 8px;
   padding: 10px;
@@ -13,4 +14,54 @@
 }
 .chart:hover {
   box-shadow: none;
+}
+.chart-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chart-title h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(48, 47, 47);
+}
+.chart-info h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #7d8189;
+  margin-top: 15px;
+}
+.chart-info h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 5px;
+  color: rgb(48, 47, 47);
+}
+.chart-status {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.chart-status span {
+  font-size: 18px;
+  color: #7d8189;
+}
+.curent {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #3b76e1;
+  display: inline-block;
+  margin-right: 5px;
+}
+.previus {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #f36e6e;
+  display: inline-block;
+  margin-right: 5px;
+}
+.chart-container {
+  width: 100%;
 }

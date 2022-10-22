@@ -4,9 +4,7 @@
   background-color: white;
   border-radius: 8px;
 }
-.overview-container:hover {
-  box-shadow: 3px 3px 3px 0px gray;
-}
+
 /* Header style  */
 .overview-header {
   display: flex;
@@ -14,12 +12,14 @@
   align-items: center;
 }
 .overview-header > h1 {
-  font-size: 16px;
-  color: gray;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(48, 47, 47);
 }
 .overview-header > h2 {
-  font-size: 14px;
-  color: gray;
+  font-size: 16px;
+  font-weight: bold;
+  color: #7d8189;
 }
 .dropdown-overview {
   position: absolute;
@@ -61,17 +61,18 @@
 .overview-left .top {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
 }
 .overview-left .top h2 {
   font-size: 16px;
-  color: gray;
+  font-weight: bold;
+  color: #7d8189;
 }
 .overview-left .top h1 {
-  font-size: 14px;
+  font-size: 22px;
   font-weight: bold;
-  color: rgb(63, 63, 63);
+  color: rgb(48, 47, 47);
+  padding-top: 5px;
 }
 .overview-left .top h3 {
   font-size: 14px;
@@ -79,6 +80,7 @@
   color: #7dbb88;
   border-radius: 10px;
   padding: 8px 10px;
+  align-self: flex-end;
 }
 .overview-left .bottom table {
   width: 100%;
@@ -101,12 +103,12 @@ td:nth-child(odd) {
 
 .overview-left .bottom h1 {
   font-size: 16px;
-  color: gray;
   font-weight: bold;
   padding: 5px;
+  color: #7d8189;
 }
 .overview-left .bottom h2 {
-  font-size: 16px;
+  font-size: 18px;
   padding: 5px;
   color: rgb(63, 63, 63);
 }
@@ -114,19 +116,3 @@ td:nth-child(odd) {
 .overview-right {
   width: 70%;
 }
-/* WFS Contractor
-  Payment $ Incentives
-  First Month
-  Present regularly
-  Minumum 1500/5000
-  Weekly 40 hours
-
-  Socend Month
-  2500/4000
-
-  5000-5999 5%
-  6000-7499 
-  7500+
-  https://docs.google.com/forms/d/e/1FAIpQLSdyv3KD_tipfya7Jz9C73Q5XYqRu-Bs1IeQfHQOQOJ884I7Zg/viewform
-
-*/

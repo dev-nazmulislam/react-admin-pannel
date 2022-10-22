@@ -42,7 +42,7 @@ const OverviewChart = () => {
               <h2>This Month</h2>
               <h1>$24,568</h1>
             </div>
-            <h3>+2.65$</h3>
+            <h3>+2.65%</h3>
           </div>
           <div className="bottom">
             <table>

@@ -1,23 +1,42 @@
 import "./charts.css";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
-import { motion } from "framer-motion";
-import { CircularProgressbar } from "react-circular-progressbar";
-import "react-circular-progressbar/dist/styles.css";
+import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
+
+const data = [
+  { name: "Complete", value: 800 },
+  { name: "Panding", value: 300 },
+  { name: "Canceled", value: 200 },
+];
+const COLORS = ["#77A1EA", "#BE70FA", "#FD919D"];
 
 const OrdersChart = () => {
-  const value = 70;
   return (
     <div className="chart">
-      <div className="top-content">
+      <div className="chart-title">
         <h1>Order Stars</h1>
         <AiOutlineQuestionCircle />
       </div>
-      <motion.div className="profile-chart" layoutId="expandableCard">
-        <div className="radialBar">
-          <CircularProgressbar value={value} text={`${value}%`} />
-        </div>
-        <div className="profile-detail"></div>
-      </motion.div>
+      <div className="chart-container">
+        <ResponsiveContainer width="100%" aspect={2 / 1}>
+          <PieChart>
+            <Pie data={data} innerRadius={60} outerRadius={80} dataKey="value">
+              {data.map((entry, index) => (
+                <Cell
+                  key={`cell-${index}`}
+                  fill={COLORS[index % COLORS.length]}
+                />
+              ))}
+            </Pie>
+          </PieChart>
+        </ResponsiveContainer>
+      </div>
+      <div className="chart-title">
+        {data.map((d, index) => (
+          <h1 key={index} style={{ color: COLORS[index], marginTop: "15px" }}>
+            {d.name}
+          </h1>
+        ))}
+      </div>
     </div>
   );
 };
