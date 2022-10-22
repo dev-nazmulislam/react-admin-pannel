@@ -43,10 +43,12 @@ main {
   font-size: 18px;
   line-height: 0;
   color: #5f6175;
+  cursor: pointer;
 }
 .bars {
   width: 30px;
   color: #5f6175;
+  cursor: pointer;
 }
 .hide {
   display: none;

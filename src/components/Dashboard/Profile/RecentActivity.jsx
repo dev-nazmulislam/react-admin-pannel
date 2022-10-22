@@ -26,7 +26,7 @@ const RecentActivity = () => {
       {activities.map((activity) => (
         <div className="activity-item">
           <div className="activity-date">{activity.date}</div>
-          <p>{activity.message}</p>
+          <p className="activity-message">{activity.message}</p>
         </div>
       ))}
     </div>

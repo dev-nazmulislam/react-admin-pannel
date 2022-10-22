@@ -37,7 +37,7 @@ export const navRoutes = [
 ];
 export const menuRoutes = [
   {
-    path: "/",
+    path: "/dashboard",
     name: "Dashboard",
     icon: <MdDashboard />,
     subRoutes: [

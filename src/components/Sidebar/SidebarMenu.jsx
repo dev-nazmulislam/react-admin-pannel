@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
 import { FaAngleDown } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const menuAnimation = {
   hidden: {
@@ -37,9 +37,12 @@ const menuItemAnimation = {
 
 const SidebarMenu = ({ route, showAnimation, isOpen, setIsOpen }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const toggleMenu = () => {
+  const navigate = useNavigate();
+  const toggleMenu = (props) => {
+    console.log(props);
     setIsMenuOpen(!isMenuOpen);
     setIsOpen(true);
+    navigate(props.path);
   };
 
   useEffect(() => {
@@ -49,7 +52,7 @@ const SidebarMenu = ({ route, showAnimation, isOpen, setIsOpen }) => {
   }, [isOpen]);
   return (
     <>
-      <div className="menu" onClick={toggleMenu}>
+      <div className="menu" onClick={() => toggleMenu(route)}>
         <div className="menu_item">
           <div className="icon">{route.icon}</div>
           <AnimatePresence>

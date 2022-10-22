@@ -8,6 +8,7 @@
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "apexcharts": "^3.36.0",
+    "firebase": "^9.12.1",
     "framer-motion": "^6.5.1",
     "react": "^17.0.2",
     "react-apexcharts": "^1.4.0",

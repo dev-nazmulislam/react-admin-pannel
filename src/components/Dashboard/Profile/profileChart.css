@@ -38,6 +38,9 @@
 .profile-detail > span:nth-child(2) {
   font-size: 14px;
 }
+.profile-detail > span:nth-child(3) {
+  font-size: 14px;
+}
 .profile-button {
   background-color: #eff7f0;
   color: #7dbb88;

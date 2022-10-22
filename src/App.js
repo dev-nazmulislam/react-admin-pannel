@@ -1,7 +1,6 @@
 import "./App.css";
 import SideBar from "./components/Sidebar/SideBar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 import Dashboard from "./pages/Dashboard";
 import FileManager from "./pages/FileManager";
 import Calendar from "./pages/Calendar";
@@ -21,6 +20,7 @@ function App() {
       <SideBar>
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/file-manager" element={<FileManager />} />

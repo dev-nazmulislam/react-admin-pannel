@@ -3,10 +3,9 @@
   padding: 1rem;
   background-color: white;
   border-radius: 8px;
-  margin-top: 1rem;
 }
 .overview-container:hover {
-  box-shadow: 5px 5px 5px 0px gray;
+  box-shadow: 3px 3px 3px 0px gray;
 }
 /* Header style  */
 .overview-header {
@@ -85,9 +84,10 @@
   width: 100%;
 }
 .overview-left .bottom table td {
-  min-width: 130px;
+  min-width: 100px;
   min-height: 90px;
   padding: 5px;
+  overflow: hidden;
 }
 td {
   border-bottom: 2px solid lightgray;
@@ -114,3 +114,19 @@ td:nth-child(odd) {
 .overview-right {
   width: 70%;
 }
+/* WFS Contractor
+  Payment $ Incentives
+  First Month
+  Present regularly
+  Minumum 1500/5000
+  Weekly 40 hours
+
+  Socend Month
+  2500/4000
+
+  5000-5999 5%
+  6000-7499 
+  7500+
+  https://docs.google.com/forms/d/e/1FAIpQLSdyv3KD_tipfya7Jz9C73Q5XYqRu-Bs1IeQfHQOQOJ884I7Zg/viewform
+
+*/

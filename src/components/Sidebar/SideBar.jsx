@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import {
   AiOutlineSearch,
@@ -22,6 +22,7 @@ import DropdownMenu from "../Navbar/DropdownMenu";
 const SideBar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
+  const navigate = useNavigate();
 
   const showAnimation = {
     hidden: {
@@ -64,6 +65,7 @@ const SideBar = ({ children }) => {
                   animate="show"
                   exit="hidden"
                   className="logo"
+                  onClick={() => navigate("/")}
                 >
                   Admin Panel
                 </motion.h1>

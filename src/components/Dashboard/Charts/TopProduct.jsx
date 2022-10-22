@@ -1,7 +1,25 @@
-import React from "react";
+import "./charts.css";
+import { AiOutlineQuestionCircle } from "react-icons/ai";
+import { motion } from "framer-motion";
+import { CircularProgressbar } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
 const TopProduct = () => {
-  return <div>Top Product</div>;
+  const value = 70;
+  return (
+    <div className="chart">
+      <div className="top-content">
+        <h1>Top Products</h1>
+        <AiOutlineQuestionCircle />
+      </div>
+      <motion.div className="profile-chart" layoutId="expandableCard">
+        <div className="radialBar">
+          <CircularProgressbar value={value} text={`${value}%`} />
+        </div>
+        <div className="profile-detail"></div>
+      </motion.div>
+    </div>
+  );
 };
 
 export default TopProduct;
