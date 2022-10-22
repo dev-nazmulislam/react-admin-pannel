@@ -1,0 +1,116 @@
+/* Overview section  */
+.overview-container {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+.overview-container:hover {
+  box-shadow: 5px 5px 5px 0px gray;
+}
+/* Header style  */
+.overview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.overview-header > h1 {
+  font-size: 16px;
+  color: gray;
+}
+.overview-header > h2 {
+  font-size: 14px;
+  color: gray;
+}
+.dropdown-overview {
+  position: absolute;
+  top: 40px;
+  right: -10px;
+  width: 90px;
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 1rem 0.5rem;
+  overflow: hidden;
+  z-index: 6;
+}
+.overview-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Overview main section style  */
+.overview-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 1rem 0rem;
+}
+
+/* left side style  */
+.overview-left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  overflow: hidden;
+}
+.overview-left .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.overview-left .top h2 {
+  font-size: 16px;
+  color: gray;
+}
+.overview-left .top h1 {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(63, 63, 63);
+}
+.overview-left .top h3 {
+  font-size: 14px;
+  background-color: #eff7f0;
+  color: #7dbb88;
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+.overview-left .bottom table {
+  width: 100%;
+}
+.overview-left .bottom table td {
+  min-width: 130px;
+  min-height: 90px;
+  padding: 5px;
+}
+td {
+  border-bottom: 2px solid lightgray;
+}
+td:nth-child(odd) {
+  border-right: 2px solid lightgray;
+}
+.border-none {
+  border-bottom: none;
+}
+
+.overview-left .bottom h1 {
+  font-size: 16px;
+  color: gray;
+  font-weight: bold;
+  padding: 5px;
+}
+.overview-left .bottom h2 {
+  font-size: 16px;
+  padding: 5px;
+  color: rgb(63, 63, 63);
+}
+/* Right side chart style  */
+.overview-right {
+  width: 70%;
+}

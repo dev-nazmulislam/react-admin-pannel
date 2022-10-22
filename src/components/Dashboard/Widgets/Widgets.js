@@ -1,5 +1,5 @@
 import React from "react";
-import { cardsData } from "../../Data/Data";
+import { cardsData } from "../../../Data/Data";
 import Widget from "../widget/Widget";
 import "./widgets.css";
 const Widgets = () => {

@@ -13,7 +13,8 @@ import Projects from "./pages/Projects";
 import Contacts from "./pages/Contacts";
 import Authentication from "./pages/Authentication";
 import Utility from "./pages/Utility";
-import Profile from "./pages/Profile";
+import Profile from "./components/Dashboard/Profile/Profile";
+
 function App() {
   return (
     <Router>

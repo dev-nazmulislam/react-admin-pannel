@@ -1,7 +1,7 @@
-import ProfileChart from "../components/ProfileChart/ProfileChart";
-import RecentActivity from "../components/RecentActivity/RecentActivity";
-import "./pages.css";
+import "./profile.css";
 import { BiDotsHorizontal } from "react-icons/bi";
+import ProfileChart from "./ProfileChart";
+import RecentActivity from "./RecentActivity";
 
 const Profile = () => {
   return (
