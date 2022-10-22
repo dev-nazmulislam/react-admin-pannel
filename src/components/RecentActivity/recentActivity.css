@@ -1,0 +1,25 @@
+.recent-activity {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.recent-activity > h1 {
+  font-size: 16px;
+  color: gray;
+}
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.activity-date {
+  font-size: 16px;
+  font-weight: bold;
+  color: gray;
+  background-color: #f5f6f8;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+}

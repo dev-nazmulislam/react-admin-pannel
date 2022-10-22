@@ -1,0 +1,14 @@
+.dashboard-container {
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto 20rem;
+  gap: 10px;
+  margin-top: 0.5rem;
+}
+.left-content {
+  width: 100%;
+}
+.right-content {
+  width: 100%;
+}

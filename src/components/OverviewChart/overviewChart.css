@@ -1,0 +1,36 @@
+.overview-container {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+.overview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.overview-header > h1 {
+  font-size: 16px;
+  color: gray;
+}
+.overview-header > h2 {
+  font-size: 14px;
+  color: gray;
+}
+.dropdown-overview {
+  position: absolute;
+  top: 40px;
+  right: -10px;
+  width: 90px;
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 1rem 0.5rem;
+  overflow: hidden;
+  z-index: 6;
+}
+.overview-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}

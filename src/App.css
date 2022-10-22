@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+main {
+  padding: 10px;
+}
+
+.title {
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #010422;
+  height: 100vh;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+.logo {
+  font-size: 18px;
+  line-height: 0;
+  color: #5f6175;
+}
+.bars {
+  width: 30px;
+  color: #5f6175;
+}
+.hide {
+  display: none;
+}
+.menu-top {
+  margin-top: 15px;
+  padding: 0px 10px;
+}
+.menu-top > h1 {
+  font-size: 14px;
+  color: #5f6175;
+}
+
+.routes {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.link {
+  display: flex;
+  align-items: center;
+  color: #43465b;
+  gap: 10px;
+  padding: 5px 10px;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.link:hover {
+  background: rgb(45, 51, 89);
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.active {
+  background: rgb(45, 51, 89);
+  color: white;
+}
+.link_text {
+  /* white-space: nowrap; */
+  font-size: 12px;
+  padding: 5px 0px;
+  font-weight: bold;
+}
+
+.menu {
+  color: #43465b;
+  padding: 0px 10px;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  cursor: pointer;
+}
+.menu_item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.menu_container {
+  display: flex;
+  flex-direction: column;
+}
+.menu_container .link {
+  padding-left: 25px;
+}
+
+.center-content {
+  width: 100%;
+  border-top-left-radius: 28px;
+  background-color: #f1f3f7;
+}
+.icon {
+  font-size: 18px;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
