@@ -16,10 +16,21 @@ const OrdersChart = () => {
         <h1>Order Stars</h1>
         <AiOutlineQuestionCircle />
       </div>
-      <div className="chart-container">
-        <ResponsiveContainer width="100%" aspect={2 / 1}>
+      <div className="chart-body">
+        <ResponsiveContainer width="90%" aspect={6 / 5}>
           <PieChart>
-            <Pie data={data} innerRadius={60} outerRadius={80} dataKey="value">
+            <Pie
+              data={data}
+              margin={{
+                top: 30,
+                right: 0,
+                left: 0,
+                bottom: 0,
+              }}
+              innerRadius={60}
+              outerRadius={80}
+              dataKey="value"
+            >
               {data.map((entry, index) => (
                 <Cell
                   key={`cell-${index}`}

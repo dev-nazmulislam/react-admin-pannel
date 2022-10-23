@@ -9,15 +9,15 @@ import { MdDashboard, MdOutlineNotifications } from "react-icons/md";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import SidebarMenu from "./SidebarMenu";
+import NavBar from "../Navbar/NavBar";
+import NavItem from "../Navbar/NavItem";
+import DropdownMenu from "../Navbar/DropdownMenu";
 import {
   applicationsRoute,
   authenticationRoute,
   componentsRoute,
   menuRoutes,
-} from "./sideBarData";
-import NavBar from "../Navbar/NavBar";
-import NavItem from "../Navbar/NavItem";
-import DropdownMenu from "../Navbar/DropdownMenu";
+} from "../../Data/Data";
 
 const SideBar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);

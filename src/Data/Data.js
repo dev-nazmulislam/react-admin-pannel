@@ -1,22 +1,226 @@
-// Sidebar imports
+import { FaFileInvoiceDollar, FaUserCheck, FaElementor } from "react-icons/fa";
 import {
-  UilEstate,
-  UilClipboardAlt,
-  UilUsersAlt,
-  UilPackage,
-  UilChart,
-} from "@iconscout/react-unicons";
+  MdDashboard,
+  MdCalendarToday,
+  MdShop,
+  MdOutlineMail,
+  MdWifi,
+} from "react-icons/md";
+import {
+  AiFillFileText,
+  AiOutlineProject,
+  AiFillEdit,
+  AiOutlineSearch,
+} from "react-icons/ai";
+import { BsChatDotsFill, BsXDiamondFill } from "react-icons/bs";
 
-// Analytics Cards imports
-import { UilUsdSquare, UilMoneyWithdrawal } from "@iconscout/react-unicons";
-import { keyboard } from "@testing-library/user-event/dist/keyboard";
-
-// Recent Card Imports
-import img1 from "../imgs/img1.png";
-import img2 from "../imgs/img2.png";
-import img3 from "../imgs/img3.png";
-
-// Sidebar Data
+// SideBar Data
+export const navRoutes = [
+  {
+    icon: <AiOutlineSearch />,
+  },
+  {
+    path: "/country",
+    icon: <MdDashboard />,
+  },
+  {
+    path: "/notification",
+    icon: <MdDashboard />,
+  },
+  {
+    path: "/setting",
+    icon: <MdDashboard />,
+  },
+  {
+    path: "/profile",
+    icon: <MdDashboard />,
+  },
+];
+export const menuRoutes = [
+  {
+    path: "/dashboard",
+    name: "Dashboard",
+    icon: <MdDashboard />,
+    subRoutes: [
+      {
+        path: "/settings/ecommerce",
+        name: "Ecommerce ",
+      },
+      {
+        path: "/settings/sass",
+        name: "Sass",
+      },
+      {
+        path: "/settings/crypto",
+        name: "Crypto",
+      },
+    ],
+  },
+];
+export const applicationsRoute = [
+  {
+    path: "/calendar",
+    name: "Calendar",
+    icon: <MdCalendarToday />,
+  },
+  {
+    path: "/chat",
+    name: "Chat",
+    icon: <BsChatDotsFill />,
+  },
+  {
+    path: "/file-manager",
+    name: "File Manager",
+    icon: <AiFillFileText />,
+  },
+  {
+    path: "/ecommerce",
+    name: "Ecommerce",
+    icon: <MdShop />,
+    subRoutes: [
+      {
+        path: "/settings/ecommerce",
+        name: "Ecommerce ",
+      },
+      {
+        path: "/settings/sass",
+        name: "Sass",
+      },
+      {
+        path: "/settings/crypto",
+        name: "Crypto",
+      },
+    ],
+  },
+  {
+    path: "/email",
+    name: "Email",
+    icon: <MdOutlineMail />,
+    subRoutes: [
+      {
+        path: "/settings/profile",
+        name: "Profile ",
+      },
+      {
+        path: "/settings/2fa",
+        name: "2FA",
+      },
+      {
+        path: "/settings/billing",
+        name: "Billing",
+      },
+    ],
+  },
+  {
+    path: "/invoice",
+    name: "Invoice",
+    icon: <FaFileInvoiceDollar />,
+    subRoutes: [
+      {
+        path: "/settings/profile",
+        name: "Profile ",
+      },
+      {
+        path: "/settings/2fa",
+        name: "2FA",
+      },
+      {
+        path: "/settings/billing",
+        name: "Billing",
+      },
+    ],
+  },
+  {
+    path: "/projects",
+    name: "Projets",
+    icon: <AiOutlineProject />,
+    subRoutes: [
+      {
+        path: "/settings/profile",
+        name: "Profile ",
+      },
+      {
+        path: "/settings/2fa",
+        name: "2FA",
+      },
+      {
+        path: "/settings/billing",
+        name: "Billing",
+      },
+    ],
+  },
+  {
+    path: "/contacts",
+    name: "Contacts",
+    icon: <MdWifi />,
+  },
+];
+export const authenticationRoute = [
+  {
+    path: "/authentication",
+    name: "Authentication",
+    icon: <FaUserCheck />,
+  },
+  {
+    path: "/utility",
+    name: "Utility",
+    icon: <BsXDiamondFill />,
+    subRoutes: [
+      {
+        path: "/settings/ecommerce",
+        name: "Ecommerce ",
+      },
+      {
+        path: "/settings/sass",
+        name: "Sass",
+      },
+      {
+        path: "/settings/crypto",
+        name: "Crypto",
+      },
+    ],
+  },
+];
+export const componentsRoute = [
+  {
+    path: "/uiElement",
+    name: "UI Elements",
+    icon: <FaElementor />,
+    subRoutes: [
+      {
+        path: "/settings/ecommerce",
+        name: "Ecommerce ",
+      },
+      {
+        path: "/settings/sass",
+        name: "Sass",
+      },
+      {
+        path: "/settings/crypto",
+        name: "Crypto",
+      },
+    ],
+  },
+  {
+    path: "/forms",
+    name: "Forms",
+    icon: <AiFillEdit />,
+    subRoutes: [
+      {
+        path: "/settings/ecommerce",
+        name: "Ecommerce ",
+      },
+      {
+        path: "/settings/sass",
+        name: "Sass",
+      },
+      {
+        path: "/settings/crypto",
+        name: "Crypto",
+      },
+    ],
+  },
+];
 
 // Analytics Cards Data
 export const cardsData = [
@@ -68,27 +272,5 @@ export const cardsData = [
         data: [10, 25, 15, 30, 12, 15, 20],
       },
     ],
-  },
-];
-
-// Recent Update Card Data
-export const UpdatesData = [
-  {
-    img: img1,
-    name: "Andrew Thomas",
-    noti: "has ordered Apple smart watch 2500mh battery.",
-    time: "25 seconds ago",
-  },
-  {
-    img: img2,
-    name: "James Bond",
-    noti: "has received Samsung gadget for charging battery.",
-    time: "30 minutes ago",
-  },
-  {
-    img: img3,
-    name: "Iron Man",
-    noti: "has ordered Apple smart watch, samsung Gear 2500mh battery.",
-    time: "2 hours ago",
   },
 ];

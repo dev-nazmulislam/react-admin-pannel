@@ -1,11 +1,21 @@
 .charts-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
 }
 
-/* Activity Chart  */
 .chart {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 3px 3px 0px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.top-product {
   width: 100%;
   background-color: white;
   border-radius: 8px;
@@ -13,6 +23,9 @@
   box-shadow: 0px 3px 3px 0px gray;
 }
 .chart:hover {
+  box-shadow: none;
+}
+.top-product:hover {
   box-shadow: none;
 }
 .chart-title {
@@ -62,19 +75,61 @@
   display: inline-block;
   margin-right: 5px;
 }
-.chart-container {
+.chart-body {
   width: 100%;
-  padding: 5px;
 }
 
+/* Top Product  */
+.product-items {
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.item-left {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+.number {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: #77a0ea;
+  padding: 8px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.product h1 {
+  font-size: 18px;
+  color: rgb(48, 47, 47);
+}
+.product h2 {
+  font-size: 16px;
+  color: gray;
+}
+.user {
+  padding: 10px 20px;
+  background-color: #f5f6f8;
+  border-radius: 8px;
+}
 @media screen and (max-width: 1200px) {
   .charts-container {
-    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .charts-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }

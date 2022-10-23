@@ -188,8 +188,8 @@ const ActivityChart = () => {
           <span>Previus</span>
         </div>
       </div>
-      <div className="chart-container">
-        <ResponsiveContainer width="100%" aspect={2 / 1}>
+      <div className="chart-body">
+        <ResponsiveContainer width="90%" aspect={6 / 5}>
           <AreaChart
             data={data}
             margin={{
