@@ -82,6 +82,7 @@ const SideBar = ({ children }) => {
               if (route.subRoutes) {
                 return (
                   <SidebarMenu
+                    key={index}
                     setIsOpen={setIsOpen}
                     route={route}
                     showAnimation={showAnimation}
@@ -95,7 +96,7 @@ const SideBar = ({ children }) => {
                   to={route.path}
                   key={index}
                   className="link"
-                  activeClassName="active"
+                  activeclassname="active"
                 >
                   <div className="icon">{route.icon}</div>
                   <AnimatePresence>
@@ -121,6 +122,7 @@ const SideBar = ({ children }) => {
               if (route.subRoutes) {
                 return (
                   <SidebarMenu
+                    key={index}
                     setIsOpen={setIsOpen}
                     route={route}
                     showAnimation={showAnimation}
@@ -134,7 +136,7 @@ const SideBar = ({ children }) => {
                   to={route.path}
                   key={index}
                   className="link"
-                  activeClassName="active"
+                  activeclassname="active"
                 >
                   <div className="icon">{route.icon}</div>
                   <AnimatePresence>
@@ -160,6 +162,7 @@ const SideBar = ({ children }) => {
               if (route.subRoutes) {
                 return (
                   <SidebarMenu
+                    key={index}
                     setIsOpen={setIsOpen}
                     route={route}
                     showAnimation={showAnimation}
@@ -173,7 +176,7 @@ const SideBar = ({ children }) => {
                   to={route.path}
                   key={index}
                   className="link"
-                  activeClassName="active"
+                  activeclassname="active"
                 >
                   <div className="icon">{route.icon}</div>
                   <AnimatePresence>
@@ -199,6 +202,7 @@ const SideBar = ({ children }) => {
               if (route.subRoutes) {
                 return (
                   <SidebarMenu
+                    key={index}
                     setIsOpen={setIsOpen}
                     route={route}
                     showAnimation={showAnimation}
@@ -212,7 +216,7 @@ const SideBar = ({ children }) => {
                   to={route.path}
                   key={index}
                   className="link"
-                  activeClassName="active"
+                  activeclassname="active"
                 >
                   <div className="icon">{route.icon}</div>
                   <AnimatePresence>

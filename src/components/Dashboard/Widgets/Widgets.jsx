@@ -7,7 +7,7 @@ const Widgets = () => {
     <div className="Cards">
       {cardsData.map((card, id) => {
         return (
-          <div className="parentContainer">
+          <div key={id} className="parentContainer">
             <Widget
               title={card.title}
               color={card.color}

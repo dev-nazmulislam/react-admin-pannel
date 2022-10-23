@@ -6,14 +6,14 @@ import {
   AiOutlineSetting,
 } from "react-icons/ai";
 import { MdHelpOutline } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const DropdownMenu = () => {
   const [activeMenu, setActiveMenu] = useState("main");
 
   function DropdownItem(props) {
     return (
-      <Link
+      <NavLink
         to={`/${props.path}`}
         className="menu-item"
         onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}
@@ -21,7 +21,7 @@ const DropdownMenu = () => {
         <span className="icon-button">{props.leftIcon}</span>
         {props.children}
         <span className="icon-right">{props.rightIcon}</span>
-      </Link>
+      </NavLink>
     );
   }
   return (

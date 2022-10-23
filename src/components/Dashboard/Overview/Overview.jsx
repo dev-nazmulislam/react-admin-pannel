@@ -2,6 +2,7 @@ import { FcCollapse } from "react-icons/fc";
 import "./overview.css";
 import NavBar from "../../Navbar/NavBar";
 import NavItem from "../../Navbar/NavItem";
+import OverviewChart from "./OverviewChart";
 
 const Overview = () => {
   return (
@@ -62,7 +63,7 @@ const Overview = () => {
           </div>
         </div>
         <div className="overview-right">
-          <h1>Right side</h1>
+          <OverviewChart />
         </div>
       </div>
     </div>

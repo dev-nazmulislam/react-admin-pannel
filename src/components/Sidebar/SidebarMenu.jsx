@@ -39,7 +39,6 @@ const SidebarMenu = ({ route, showAnimation, isOpen, setIsOpen }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
   const toggleMenu = (props) => {
-    console.log(props);
     setIsMenuOpen(!isMenuOpen);
     setIsOpen(true);
     navigate(props.path);

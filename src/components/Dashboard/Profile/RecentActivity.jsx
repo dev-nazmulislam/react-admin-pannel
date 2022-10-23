@@ -27,8 +27,8 @@ const RecentActivity = () => {
   return (
     <div className="recent-activity">
       <h1>Recent Activity</h1>
-      {activities.map((activity) => (
-        <div className="activity-item">
+      {activities.map((activity, index) => (
+        <div key={index} className="activity-item">
           <div className="activity">
             <p className="date">{activity.date}</p>
             <p className="month">{activity.month}</p>
